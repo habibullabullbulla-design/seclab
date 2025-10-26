@@ -1,0 +1,179 @@
+1. Encryption and Email Security
+
+Caesar Cipher is a substitution cipher that shifts each letter by a fixed number of positions in the alphabet.
+
+It is one of the simplest and earliest encryption methods used in classical cryptography.
+
+In Kleopatra, encryption ensures message confidentiality using public/private key pairs.
+
+Decryption in Kleopatra uses the recipient’s private key to recover the original message.
+
+Email encryption ensures secure communication and prevents unauthorized access to message content.
+
+2. Decryption and Keylogger Attack
+
+Caesar Cipher decryption shifts characters in the opposite direction of encryption.
+
+It restores the original plaintext from the encrypted text using the same key value.
+
+A keylogger records keystrokes typed on a keyboard, often used for monitoring or stealing information.
+
+Keylogger attacks can capture passwords, credit card details, or confidential messages.
+
+Protection involves using antivirus software and avoiding untrusted downloads.
+
+3. Rail Fence and Product Cipher
+
+Rail Fence Cipher is a transposition cipher that writes text in zigzag form and reads it row-wise.
+
+It rearranges letters without changing them, improving secrecy through pattern change.
+
+A Product Cipher combines two or more ciphers (like substitution and transposition).
+
+Using Rail Fence as part of a product cipher increases encryption complexity.
+
+Such combined methods form the basis for modern cryptographic algorithms.
+
+4. Caesar Decryption, SHA-512 & AES-CBC-128
+
+Caesar Cipher decryption reverses the shift applied during encryption.
+
+SHA-512 is a cryptographic hash function that produces a 512-bit (64-byte) output.
+
+Hashing ensures data integrity by detecting any modification in the input.
+
+AES (Advanced Encryption Standard) is a symmetric encryption algorithm widely used for data security.
+
+AES-CBC-128 mode uses a 128-bit key and an initialization vector (IV) to provide strong confidentiality.
+
+5. Brute Force, SHA-256 & AES-CBC-256
+
+A brute force attack tries all possible keys to decrypt encrypted text until it finds the correct one.
+
+It is time-consuming but guarantees finding the correct key eventually.
+
+SHA-256 hashing produces a 256-bit output and is used to ensure message integrity.
+
+AES-CBC-256 uses a 256-bit key for stronger encryption security.
+
+CBC mode adds randomness through the IV, preventing pattern-based attacks.
+
+6. Product Cipher & AES-ECB-256
+
+A product cipher combines multiple encryption techniques to increase strength.
+
+Applying Rail Fence on Caesar Cipher output mixes substitution and transposition for higher complexity.
+
+AES-ECB mode encrypts each block independently, which can reveal patterns in data.
+
+AES-ECB-256 uses a 256-bit key, offering strong but less secure pattern protection compared to CBC.
+
+ECB mode is usually avoided for large or patterned data due to its predictability.
+
+7. Product Cipher (Caesar) & Network Analysis
+
+Applying Caesar Cipher on encrypted text adds an additional encryption layer.
+
+Finding an IP address (like google.com) helps identify the server location.
+
+Traceroute determines the number of hops (routers) between source and destination.
+
+Port scanning reveals which communication ports are open on a server.
+
+Tools like ping, traceroute, and nmap are used for network and port analysis.
+
+8. Digital Signature
+
+A digital signature ensures authenticity, integrity, and non-repudiation of a message.
+
+It uses the sender’s private key for signing and the public key for verification.
+
+Any modification in data after signing invalidates the signature.
+
+Digital signatures are commonly used in secure email and document authentication.
+
+They rely on public key infrastructure (PKI) for trust and validation.
+
+9. RSA Encryption and Decryption
+
+RSA is an asymmetric encryption algorithm using two keys — public and private.
+
+The public key encrypts data, and the private key decrypts it.
+
+It is based on the mathematical difficulty of factoring large prime numbers.
+
+RSA ensures confidentiality and authentication in communication.
+
+It is widely used in SSL/TLS, digital signatures, and secure key exchange.
+
+10. Password Attack & File Integrity
+
+A password attack attempts to crack or guess user passwords through various methods.
+
+Network commands can help identify suspicious IPs or unauthorized access attempts.
+
+File integrity checking ensures files have not been altered or corrupted.
+
+Tools like diff, md5sum, or sha help verify file integrity.
+
+Maintaining logs helps trace the attacker and identify compromised systems.
+
+11. HTTP & HTTPS Analysis
+
+Wireshark is a network protocol analyzer used to inspect data packets in real time.
+
+HTTP transmits data in plaintext, making it less secure.
+
+HTTPS encrypts data using SSL/TLS, ensuring secure communication.
+
+HTTPS handshake involves certificate exchange and key negotiation.
+
+HTTPS protects against eavesdropping and man-in-the-middle attacks.
+
+12. Network Analysis Using PuTTY
+
+PuTTY is a terminal emulator used to connect to remote machines via SSH or Telnet.
+
+Open ports indicate active network services available for communication.
+
+Port scanning identifies which services are running on a system.
+
+Common ports include 80 (HTTP), 22 (SSH), and 443 (HTTPS).
+
+Network analysis helps assess security posture and detect vulnerabilities.
+
+13. Keylogger, AES-CBC-256 & Rail Fence Decryption
+
+A keylogger records user keystrokes to capture sensitive data.
+
+AES-CBC-256 provides strong encryption using a 256-bit key and an IV for randomness.
+
+Decryption restores original data using the same key and IV.
+
+Rail Fence decryption reconstructs the original message from its zigzag pattern.
+
+Layered encryption and decryption help protect data from unauthorized access.
+
+14. Digital Certificate
+
+A digital certificate authenticates the identity of a user or organization.
+
+It is issued by a Certificate Authority (CA) to establish trust.
+
+It contains the public key, organization details, and validity period.
+
+Digital certificates are used in SSL/TLS for secure web communication.
+
+They ensure that data is exchanged only with verified and trusted entities.
+
+15. Phishing Link Analysis
+
+A phishing link is designed to trick users into revealing personal or financial information.
+
+Such links often mimic legitimate websites to appear trustworthy.
+
+Analyzing the URL, domain, and SSL certificate helps detect phishing attempts.
+
+Phishing attacks compromise user credentials and financial data.
+
+Always verify URLs and avoid clicking unknown or suspicious links.
